@@ -4,7 +4,7 @@ Amended for Fall 2022.
 ## Installing the Current Skeleton
 
 1. In your VM, change into the repository directory and then run `./install.sh`.
-   This will install a bunch of things, set up an important file called `.flashenv`, and creates a simple PostgreSQL database named `amazon`.
+   This will set up a file called `.flashenv`, and create a simple PostgreSQL database named `amazon`.
 2. If you are running a Google VM, to view the app in your browser, you may need to edit the firewall rules.
    The [Google VM instructions](https://courses.cs.duke.edu/fall22/compsci316d/instructions/gcp/) on the course page has instructions for how to add rules at the bottom.
    If those for some reason are outdated, here are [instructions provided by Google](https://cloud.google.com/vpc/docs/using-firewalls).
@@ -32,8 +32,8 @@ deactiviate
 
 ## Working with the Database
 
-Your Flask server interacts with a PostgreSQL database called `amazon` behind the scene.
-As part of the installation procedure above, this database has been created automatically for you.
+The Flask server interacts with a PostgreSQL database called `amazon` behind the scene.
+As part of the installation procedure above, this database has been created automatically.
 You can access the database directly by running the command `psql amazon` in your VM.
 
 The `db/` subdirectory of this repository contains files useful for (re-)initializing the database if needed.
